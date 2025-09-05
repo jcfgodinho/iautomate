@@ -1,214 +1,358 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operação Comercial Reimaginada com Inteligência Artificial</title>
+    <title>Revolucione Seu Negócio com IA e Automação | João Godinho</title>
+    <!-- Inclui a fonte Inter do Google Fonts para um visual moderno -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- Inclui o CDN do Tailwind CSS para a estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #100023; /* Cor de fundo escura para todo o corpo */
+        }
+        /* Efeito de pulse para o botão CTA */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .animate-pulse-fast {
+            animation: pulse 1.5s infinite;
+        }
+        /* Efeito de bounce para o botão flutuante */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .animate-bounce-fast {
+            animation: bounce 2s infinite;
+        }
+        /* Efeito de fade-in ao rolar */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .button-green {
+            background-color: #4FCE5D;
+            transition: background-color 0.3s ease;
+        }
+        .button-green:hover {
+            background-color: #3E9B4A;
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(79, 206, 93, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(79, 206, 93, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(79, 206, 93, 0); }
+        }
+        .animate-pulse-green {
+            animation: pulse-green 2s infinite;
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-gray-300 font-sans antialiased">
+<body class="text-gray-200">
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-white">
-                <span class="text-cyan-400">AI</span>Driven
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-indigo-900 to-purple-900 min-h-screen flex items-center justify-center py-16 px-4 overflow-hidden fade-in-section">
+        <div class="absolute inset-0 bg-dots-pattern opacity-10"></div>
+        <div class="relative container mx-auto text-center z-10 max-w-4xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+                Revolucione Seu Negócio com IA e Automação
             </h1>
-            <a href="#cta" class="cta-button">
-                Agendar Diagnóstico
+            <p class="text-lg sm:text-xl md:text-2xl text-purple-200 mb-8 max-w-2xl mx-auto drop-shadow-md">
+                Equipe de vendas 24/7 + Automação inteligente = Crescimento exponencial do seu faturamento
+            </p>
+            <a href="#contact" class="inline-block button-green text-white font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1 animate-pulse-green">
+                QUERO REVOLUCIONAR MEU NEGÓCIO
             </a>
-        </div>
-    </header>
-
-    <main>
-
-        <!-- 1. Hero Section -->
-        <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            <div class="absolute inset-0 z-0">
-                <img src="https://r2.flowith.net/files/o/1756074111068-abstract_neural_network_visualization_index_0@1024x1024.png" alt="Visualização abstrata de uma rede neural" class="w-full h-full object-cover opacity-30">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent"></div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 text-white max-w-5xl mx-auto">
+                <div class="bg-white bg-opacity-10 p-6 rounded-2xl backdrop-blur-md border border-gray-700 shadow-xl">
+                    <div class="text-3xl md:text-5xl font-extrabold text-yellow-400">40%</div>
+                    <p class="text-sm md:text-lg mt-2">Aumento nas Vendas</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-2xl backdrop-blur-md border border-gray-700 shadow-xl">
+                    <div class="text-3xl md:text-5xl font-extrabold text-yellow-400">80%</div>
+                    <p class="text-sm md:text-lg mt-2">Redução no Tempo de Resposta</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-2xl backdrop-blur-md border border-gray-700 shadow-xl">
+                    <div class="text-3xl md:text-5xl font-extrabold text-yellow-400">24/7</div>
+                    <p class="text-sm md:text-lg mt-2">Equipe Trabalhando</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-2xl backdrop-blur-md border border-gray-700 shadow-xl">
+                    <div class="text-3xl md:text-5xl font-extrabold text-yellow-400">500%</div>
+                    <p class="text-sm md:text-lg mt-2">ROI Comprovado</p>
+                </div>
             </div>
-            <div class="relative z-10 text-center container mx-auto px-6 animate-on-scroll">
-                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">Sua Operação Comercial, <br class="hidden md:block" /> <span class="text-cyan-400">Reimaginada com Inteligência Artificial.</span></h1>
-                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">Criamos e gerenciamos uma força de trabalho digital que qualifica, engaja e vende por você, 24/7. Liberte sua equipe para focar no que realmente importa: a estratégia.</p>
-                <a href="#cta" class="cta-button-large">
-                    Agendar Diagnóstico Estratégico
+        </div>
+    </section>
+
+    <!-- Problemas Section -->
+    <section class="py-24 px-4 fade-in-section">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-yellow-400">Problemas que Impedem Seu Crescimento</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl shadow-lg border-l-4 border-red-500 transition-transform duration-300 hover:scale-105" style="background-color: #61398b;">
+                    <h3 class="text-2xl font-semibold mb-2">🎯 Leads Desqualificados</h3>
+                    <p class="text-gray-200">Sua equipe perde tempo com prospects que não têm potencial de compra.</p>
+                </div>
+                <div class="p-8 rounded-3xl shadow-lg border-l-4 border-red-500 transition-transform duration-300 hover:scale-105" style="background-color: #61398b;">
+                    <h3 class="text-2xl font-semibold mb-2">📉 Baixa Taxa de Conversão</h3>
+                    <p class="text-gray-200">Muitos visitantes, poucas vendas. O funil de vendas não está otimizado.</p>
+                </div>
+                <div class="p-8 rounded-3xl shadow-lg border-l-4 border-red-500 transition-transform duration-300 hover:scale-105" style="background-color: #61398b;">
+                    <h3 class="text-2xl font-semibold mb-2">⏱️ Demora no Atendimento</h3>
+                    <p class="text-gray-200">Clientes esperam e desistem. Oportunidades perdidas por falta de agilidade.</p>
+                </div>
+                <div class="p-8 rounded-3xl shadow-lg border-l-4 border-red-500 transition-transform duration-300 hover:scale-105" style="background-color: #61398b;">
+                    <h3 class="text-2xl font-semibold mb-2">💔 Perda de Leads Qualificados</h3>
+                    <p class="text-gray-200">Leads quentes esfriam por falta de follow-up adequado.</p>
+                </div>
+                <div class="p-8 rounded-3xl shadow-lg border-l-4 border-red-500 transition-transform duration-300 hover:scale-105" style="background-color: #61398b;">
+                    <h3 class="text-2xl font-semibold mb-2">🔄 Tarefas Repetitivas</h3>
+                    <p class="text-gray-200">Tempo gasto em atividades manuais que poderiam ser automatizadas.</p>
+                </div>
+                <div class="p-8 rounded-3xl shadow-lg border-l-4 border-red-500 transition-transform duration-300 hover:scale-105" style="background-color: #61398b;">
+                    <h3 class="text-2xl font-semibold mb-2">📈 Dificuldade para Escalar</h3>
+                    <p class="text-gray-200">Crescer significa contratar mais pessoas e aumentar custos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções Section -->
+    <section class="py-24 px-4 text-white fade-in-section" style="background-color: #39086e;">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-16">Nossas Soluções Revolucionárias</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="bg-white bg-opacity-20 p-10 rounded-3xl backdrop-blur-md border border-white border-opacity-30 shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">🤖</div>
+                    <h3 class="text-3xl font-semibold mb-2 text-center">Agentes de IA SDR/BDR</h3>
+                    <p class="text-lg text-center text-gray-100">Equipe de vendas virtual trabalhando 24/7, qualificando leads, tirando dúvidas e convertendo clientes automaticamente.</p>
+                    <ul class="list-none mt-6 space-y-2 text-left">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Prospecção automática
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Qualificação de leads
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Atendimento inteligente
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Conversão otimizada
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white bg-opacity-20 p-10 rounded-3xl backdrop-blur-md border border-white border-opacity-30 shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">⚡</div>
+                    <h3 class="text-3xl font-semibold mb-2 text-center">Automação de Marketing</h3>
+                    <p class="text-lg text-center text-gray-100">Fluxos inteligentes que nutrem leads, recuperam vendas perdidas e maximizam seu faturamento.</p>
+                    <ul class="list-none mt-6 space-y-2 text-left">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Aquecimento automático
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Recuperação de carrinho
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Upsell e downsell
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Otimização contínua
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white bg-opacity-20 p-10 rounded-3xl backdrop-blur-md border border-white border-opacity-30 shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">🎯</div>
+                    <h3 class="text-3xl font-semibold mb-2 text-center">Estratégias Personalizadas</h3>
+                    <p class="text-lg text-center text-gray-100">Soluções adaptadas para Infoprodutos, Negócios Locais e e-Commerce.</p>
+                    <ul class="list-none mt-6 space-y-2 text-left">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Análise do seu negócio
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Estratégia customizada
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Implementação completa
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Otimização contínua
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefícios Section -->
+    <section class="py-24 px-4 fade-in-section">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-yellow-400">Benefícios Comprovados</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>Economia de 50+ horas por semana</span>
+                </div>
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>Aumento de 35% na taxa de conversão</span>
+                </div>
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>Redução de 80% no tempo de resposta</span>
+                </div>
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>Atendimento 24 horas, 7 dias por semana</span>
+                </div>
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>Qualificação automática de leads</span>
+                </div>
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>ROI entre 100% e 500%</span>
+                </div>
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>Escalabilidade sem aumento de custos</span>
+                </div>
+                <div class="p-6 rounded-2xl flex items-center transition-transform duration-300 hover:translate-x-2" style="background-color: #61398b;">
+                    <svg class="h-8 w-8 text-green-400 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    <span>Relatórios detalhados de performance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-24 px-4 bg-gradient-to-br from-indigo-900 to-purple-900 text-white text-center fade-in-section">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-6">Pronto para Revolucionar Seu Negócio?</h2>
+            <p class="text-lg sm:text-xl text-purple-200 mb-10">
+                Agende uma reunião de diagnóstico gratuita e descubra como podemos multiplicar seu faturamento.
+            </p>
+            <a href="https://wa.me/5511983487363?text=Ol%C3%A1!%20Quero%20revolucionar%20meu%20neg%C3%B3cio%20com%20IA%20e%20automa%C3%A7%C3%A3o" 
+               class="inline-block button-green text-white font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1 animate-pulse-green">
+                AGENDAR REUNIÃO GRATUITA
+            </a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-lg text-yellow-300">
+                <p>🎯 Diagnóstico completo do seu negócio</p>
+                <p>📊 Proposta personalizada</p>
+                <p>🚀 Implementação em 3 semanas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 px-4 bg-[#100023] text-white fade-in-section">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-16">Perguntas Frequentes</h2>
+            <p class="text-center text-lg mb-12">Respostas para as dúvidas mais comuns sobre nossos serviços de Automação e IA.</p>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Qual o custo para implementar um Agente de IA?</h3>
+                    <p class="text-gray-400">O custo varia conforme a complexidade do projeto. Iniciamos com um diagnóstico para entender suas necessidades e apresentar uma proposta personalizada. Nosso foco é no ROI, garantindo que o investimento se pague rapidamente através do aumento de eficiência e vendas.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Quanto tempo leva para ver os resultados?</h3>
+                    <p class="text-gray-400">A implementação inicial geralmente leva de 2 a 4 semanas. No entanto, os primeiros resultados, como leads sendo qualificados ou tarefas sendo automatizadas, podem ser vistos quase imediatamente após a ativação do sistema.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Isso se integra com meu CRM atual?</h3>
+                    <p class="text-gray-400">Sim. Nossas soluções são projetadas para serem flexíveis e se integrarem com as principais ferramentas do mercado, como CRMs, plataformas de email marketing e outros softwares, garantindo um fluxo de dados coeso e sem interrupções.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Qual a diferença entre um Agente de IA e um chatbot comum?</h3>
+                    <p class="text-gray-400">Enquanto chatbots comuns seguem fluxos pré-definidos e rígidos, nossos Agentes de IA utilizam modelos de linguagem avançados para entender contexto, manter conversas naturais, tomar decisões e executar ações complexas, como qualificação de leads e agendamento de reuniões, de forma autônoma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/5511983487363?text=Olá! Quero saber mais sobre IA e automação" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-3xl shadow-lg transition-transform duration-300 hover:scale-110 z-50 animate-bounce-fast" 
+       aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C7.99 2 4.6 5.39 4.6 9.41c0 1.4.38 2.83 1.05 4.09L5 18l4.57-2.03c1.11.61 2.37.96 3.47.96 4.05 0 7.44-3.39 7.44-7.42 0-4.03-3.39-7.41-7.44-7.41zm3.87 10.97c-.12.35-.61.64-1.12.87-.27.12-.55.19-.83.21-.29.02-.37.02-.55-.08-.18-.1-.47-.16-1-.4-.53-.23-.88-.52-1.22-.85-.35-.34-.78-.86-1.1-1.39-.32-.53-.02-.82-.24-1.05-.22-.24-.51-.3-.79-.31-.28-.02-.6-.02-.78.02-.18.04-.45.19-.68.42-.23.23-.6.54-.7.66-.1.12-.2.12-.3.26-.06.1-.1.17-.18.23-.08.06-.17.14-.23.22-.06.08-.11.16-.16.24-.05.08-.09.16-.13.24-.04.08-.07.16-.1.23-.03.07-.06.14-.08.21-.02.07-.04.14-.05.21-.01.07-.01.14-.01.2-.01.07-.01.14-.01.2-.01.07-.01.14-.01.21-.01.07-.01.14-.01.21.01.29.06.49.25.66.19.17.43.25.68.25.26 0 .5-.08.7-.26.2-.18.43-.25.72-.25.29 0 .57.06.78.13.21.07.47.16.63.2.16.04.42.09.58.15.16.06.33.12.5.18.17.06.35.12.53.18.18.06.37.1.56.12.19.02.39.04.59.04.38 0 .72-.05 1.05-.15.33-.1.64-.26.92-.46.29-.2.53-.44.75-.68.22-.24.37-.48.45-.66.08-.18.13-.37.13-.56.02-.19-.02-.38-.04-.57-.02-.19-.06-.39-.12-.59-.06-.2-.1-.42-.15-.65-.05-.23-.1-.47-.14-.7-.04-.23-.08-.47-.12-.7-.04-.23-.07-.46-.11-.69z"></path></svg>
+    </a>
+
+    <!-- JavaScript para smooth scrolling e animação de fade-in -->
+    <script>
+        // Smooth scrolling para âncoras internas
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Adiciona a classe 'is-visible' quando a seção entra na área visível
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observa todas as seções com a classe 'fade-in-section'
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="py-12 px-4 text-center text-gray-400" style="background-color: #100023;">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-6">
+                <a href="https://www.instagram.com/joaogodinho.mktdigital" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-300" aria-label="Instagram">
+                    <img src="https://github.com/jcfgodinho/iautomate/blob/faf17310728c15ff142a92629df34fe7a6e5dda3/Instagram.png?raw=true" alt="Instagram Logo" class="h-8 w-8">
+                </a>
+                <a href="https://www.facebook.com/jcfgodinho" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-300" aria-label="Facebook">
+                    <img src="https://github.com/jcfgodinho/iautomate/blob/faf17310728c15ff142a92629df34fe7a6e5dda3/Facebook.png?raw=true" alt="Facebook Logo" class="h-8 w-8">
+                </a>
+                <a href="https://www.linkedin.com/in/joaocarlosgodinho" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                    <img src="https://github.com/jcfgodinho/iautomate/blob/faf17310728c15ff142a92629df34fe7a6e5dda3/Linkedin.png?raw=true" alt="LinkedIn Logo" class="h-8 w-8">
                 </a>
             </div>
-        </section>
-
-        <!-- 2. The Problem Section -->
-        <section id="problem" class="py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://r2.flowith.net/files/o/1756074103373-subtle_tech_light_particle_background_index_3@1024x1024.png');">
-            <div class="container mx-auto px-6 text-center max-w-4xl">
-                <div class="animate-on-scroll">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Sua equipe está no limite. Seu crescimento, também.</h2>
-                    <p class="text-lg text-gray-400 mb-8">O crescimento de uma empresa revela gargalos que antes eram invisíveis. Leads qualificados escapam por falta de agilidade. Oportunidades são perdidas em meio a tarefas manuais. Sua equipe, sobrecarregada com processos repetitivos, não consegue focar em inovação e estratégia.</p>
-                    <p class="text-lg text-cyan-300 italic border-l-4 border-cyan-400 pl-6 py-2 inline-block">Parece familiar? A diferença entre estagnação e escala está na capacidade de automatizar a operação sem perder a inteligência.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. The Solution Section -->
-        <section id="solution" class="py-20 md:py-32">
-            <div class="container mx-auto px-6 max-w-5xl text-center">
-                 <div class="animate-on-scroll">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Menos Ferramentas, <span class="text-orange-400">Mais Inteligência.</span></h2>
-                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Esqueça a complexidade de gerenciar múltiplos softwares. Nós entregamos uma solução unificada: <strong class="text-white">Agentes de IA e Automações Estratégicas</strong> que funcionam como uma extensão da sua equipe.</p>
-                    <p class="text-base text-gray-400 max-w-3xl mx-auto">Nós projetamos, implementamos e otimizamos sistemas inteligentes que executam tarefas complexas com precisão cirúrgica. Desde a prospecção inicial até a nutrição contínua de clientes, nossa tecnologia trabalha para garantir que nenhuma oportunidade seja desperdiçada, permitindo que sua empresa opere com máxima eficiência e inteligência.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Services Section -->
-        <section id="services" class="py-20 md:py-32 bg-gray-950">
-            <div class="container mx-auto px-6">
-                <!-- Service 1: AI Agents -->
-                <div class="flex flex-col md:flex-row items-center gap-12 mb-24 animate-on-scroll">
-                    <div class="md:w-1/2">
-                        <h3 class="text-3xl font-bold text-white mb-4">Sua Prospecção e Qualificação no <span class="text-cyan-400">Piloto Automático.</span></h3>
-                        <p class="text-gray-400 mb-6">Nossos Agentes de IA são treinados para agir como seus melhores vendedores. Eles iniciam conversas, qualificam leads com base em critérios precisos, respondem dúvidas instantaneamente e agendam reuniões diretamente na agenda do seu time comercial.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start"><i data-lucide="zap" class="w-6 h-6 text-cyan-400 mr-3 mt-1 flex-shrink-0"></i><div><strong class="text-white">Escala Ilimitada:</strong> Interaja com milhares de leads simultaneamente, sem aumentar a equipe.</div></li>
-                            <li class="flex items-start"><i data-lucide="target" class="w-6 h-6 text-cyan-400 mr-3 mt-1 flex-shrink-0"></i><div><strong class="text-white">Qualificação Precisa:</strong> Entregue apenas oportunidades quentes para seu time de closers.</div></li>
-                            <li class="flex items-start"><i data-lucide="clock" class="w-6 h-6 text-cyan-400 mr-3 mt-1 flex-shrink-0"></i><div><strong class="text-white">Disponibilidade 24/7:</strong> Nunca mais perca um lead por demora na resposta.</div></li>
-                        </ul>
-                    </div>
-                    <div class="md:w-1/2">
-                        <img src="https://r2.flowith.net/files/o/1756074140451-ai_sales_agents_data_network_index_1@1024x1024.png" alt="Rede de dados para agentes de vendas IA" class="rounded-lg shadow-2xl shadow-cyan-500/10">
-                    </div>
-                </div>
-
-                <!-- Service 2: Marketing Automation -->
-                <div class="flex flex-col md:flex-row-reverse items-center gap-12 animate-on-scroll">
-                    <div class="md:w-1/2">
-                        <h3 class="text-3xl font-bold text-white mb-4">Jornadas de Cliente que Convertem <span class="text-orange-400">Enquanto Você Dorme.</span></h3>
-                        <p class="text-gray-400 mb-6">Transformamos seus processos de marketing em fluxos automatizados e inteligentes. Criamos funis de nutrição, recuperação de vendas e onboarding que se adaptam ao comportamento do usuário, entregando a mensagem certa no momento certo.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start"><i data-lucide="rocket" class="w-6 h-6 text-orange-400 mr-3 mt-1 flex-shrink-0"></i><div><strong class="text-white">Lançamentos de Infoprodutos:</strong> Aqueça sua base e maximize as vendas na abertura do carrinho.</div></li>
-                            <li class="flex items-start"><i data-lucide="map-pin" class="w-6 h-6 text-orange-400 mr-3 mt-1 flex-shrink-0"></i><div><strong class="text-white">Negócios Locais:</strong> Automatize agendamentos, campanhas e pesquisas de satisfação.</div></li>
-                            <li class="flex items-start"><i data-lucide="shopping-cart" class="w-6 h-6 text-orange-400 mr-3 mt-1 flex-shrink-0"></i><div><strong class="text-white">E-commerce:</strong> Recupere carrinhos abandonados e crie campanhas de fidelidade personalizadas.</div></li>
-                        </ul>
-                    </div>
-                    <div class="md:w-1/2">
-                        <img src="https://r2.flowith.net/files/o/1756074120839-marketing_automation_flow_diagram_index_2@1024x1024.png" alt="Fluxograma de automação de marketing" class="rounded-lg shadow-2xl shadow-orange-500/10">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. How It Works -->
-        <section id="process" class="py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Como Funciona</h2>
-                    <p class="text-lg text-gray-400">Nosso processo é desenhado para ser transparente, colaborativo e focado em resultados rápidos, desmistificando a implementação de IA no seu negócio.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Step 1 -->
-                    <div class="process-card animate-on-scroll">
-                        <div class="text-cyan-400 font-bold text-5xl mb-4">01</div>
-                        <h3 class="text-xl font-bold text-white mb-2">Diagnóstico</h3>
-                        <p class="text-gray-400">Mapeamos seus processos atuais para identificar os maiores pontos de alavancagem para automação e IA.</p>
-                    </div>
-                    <!-- Step 2 -->
-                    <div class="process-card animate-on-scroll" style="animation-delay: 150ms;">
-                        <div class="text-cyan-400 font-bold text-5xl mb-4">02</div>
-                        <h3 class="text-xl font-bold text-white mb-2">Proposta</h3>
-                        <p class="text-gray-400">Apresentamos um plano estratégico detalhado, com escopo, cronograma e projeção de resultados.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="process-card animate-on-scroll" style="animation-delay: 300ms;">
-                        <div class="text-cyan-400 font-bold text-5xl mb-4">03</div>
-                        <h3 class="text-xl font-bold text-white mb-2">Implementação</h3>
-                        <p class="text-gray-400">Nossa equipe constrói, treina e integra a solução de IA na sua operação com o mínimo de disrupção.</p>
-                    </div>
-                    <!-- Step 4 -->
-                    <div class="process-card animate-on-scroll" style="animation-delay: 450ms;">
-                        <div class="text-cyan-400 font-bold text-5xl mb-4">04</div>
-                        <h3 class="text-xl font-bold text-white mb-2">Otimização</h3>
-                        <p class="text-gray-400">Monitoramos a performance continuamente, refinando a estratégia para maximizar seu ROI.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- 8. FAQ Section -->
-        <section id="faq" class="py-20 md:py-32 bg-gray-950">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <div class="text-center mb-16 animate-on-scroll">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Perguntas Frequentes</h2>
-                    <p class="text-lg text-gray-400">Respostas para as dúvidas mais comuns sobre nossos serviços de IA.</p>
-                </div>
-                <div class="space-y-4 animate-on-scroll">
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Qual o custo para implementar um Agente de IA?</span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>O custo varia conforme a complexidade do projeto. Iniciamos com um diagnóstico para entender suas necessidades e apresentar uma proposta personalizada. Nosso foco é no ROI, garantindo que o investimento se pague rapidamente através do aumento de eficiência e vendas.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Quanto tempo leva para ver os resultados?</span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>A implementação inicial geralmente leva de 2 a 4 semanas. No entanto, os primeiros resultados, como leads sendo qualificados ou tarefas sendo automatizadas, podem ser vistos quase imediatamente após a ativação do sistema.</p>
-                        </div>
-                    </div>
-                     <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Isso se integra com meu CRM atual?</span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Sim. Nossas soluções são projetadas para serem flexíveis e se integrarem com as principais ferramentas do mercado, como CRMs, plataformas de email marketing e outros softwares, garantindo um fluxo de dados coeso e sem interrupções.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Qual a diferença entre um Agente de IA e um chatbot comum?</span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Enquanto chatbots comuns seguem fluxos pré-definidos e rígidos, nossos Agentes de IA utilizam modelos de linguagem avançados para entender contexto, manter conversas naturais, tomar decisões e executar ações complexas, como qualificação de leads e agendamento de reuniões, de forma autônoma.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 9. Final CTA Section -->
-        <section id="cta" class="py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://r2.flowith.net/files/o/1756074103373-subtle_tech_light_particle_background_index_3@1024x1024.png');">
-            <div class="container mx-auto px-6 text-center max-w-3xl">
-                <div class="animate-on-scroll">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">Pronto para colocar sua operação no <span class="text-cyan-400">próximo nível?</span></h2>
-                    <p class="text-lg text-gray-300 mb-8">Chega de perder oportunidades. Chega de sobrecarga operacional. Vamos construir juntos uma operação comercial mais inteligente e escalável.</p>
-                    <a href="#" class="cta-button-large">
-                        Quero Agendar Meu Diagnóstico Gratuito
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-950 py-8">
-        <div class="container mx-auto px-6 text-center text-gray-500">
-            <p>&copy; 2025 AI-Driven. Todos os direitos reservados.</p>
-             <p class="text-sm mt-2">Construindo o futuro das operações comerciais.</p>
+            <p class="text-sm">
+                &copy; 2024 João Godinho. Todos os direitos reservados.
+            </p>
         </div>
     </footer>
 
-
-    <script type="module" src="script.js"></script>
 </body>
 </html>
